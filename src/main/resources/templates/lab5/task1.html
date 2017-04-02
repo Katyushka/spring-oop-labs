@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" lang="en">
+<head>
+    <link rel="stylesheet" th:href="@{/css/lib/bootstrap.css}"/>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" th:href="@{/css/lib/fileinput.css}"/>
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+</head>
+<body>
+
+<h3 style="text-align: center">Задание: Найти самое длинное слово в загруженном файле и удалить все его вхождения</h3>
+<br>
+</br>
+
+<form th:action="@{/lab5/task1}" th:object="${form}" th:method="post" enctype="multipart/form-data">
+    <div class="container" style="margin-left: 20px;">
+        <div class="row">
+            <div class="col-md-6">
+                <label class="control-label">Выберите файл</label>
+                <input id="input-1" type="file" class="file" data-show-preview="false" name="file"/>
+
+                <br>
+                </br>
+                <button class="form-control btn btn-success"    name="showUploadedText" type="submit">Показать текст файла</button>
+            </div>
+        </div>
+        <br>
+        </br>
+        <div class="row">
+            <div class="col-md-6">
+                <input type="text" class="span3" placeholder="Текст выбранного файла…"/>
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="span3" placeholder="Текст выбранного файла…"/>
+            </div>
+        </div>
+
+    </div>
+
+
+</form>
+<script type="text/javascript" th:src="@{/js/lib/jquery-3.1.1.js}"></script>
+<script type="text/javascript" th:src="@{/js/lib/bootstrap.js}"></script>
+<script type="text/javascript" th:src="@{/js/lib/fileinput.js}"></script>
+
+
+</body>
+</html>

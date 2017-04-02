@@ -13,6 +13,8 @@ h1, h2, h3, h4, h5, h6{
 	font-family: 'Dosis', sans-serif;
 }
 
+
+
 /*Header*/
 .navbar-default .navbar-nav>li>a {
 color: #777;
@@ -20,6 +22,12 @@ text-transform: uppercase;
 }
 .navbar-default .navbar-nav>li>a:hover{
 	color: #f74d65;
+}
+
+.calcForm{
+
+	margin: 20px;
+
 }
 /*
 header{

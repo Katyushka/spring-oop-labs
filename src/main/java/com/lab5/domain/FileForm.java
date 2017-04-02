@@ -12,6 +12,7 @@ public class FileForm {
     private String url;
     private byte[] content;
     private String mimeType;
+    private String longestWord;
 
 
     public String getName() {
@@ -52,5 +53,13 @@ public class FileForm {
 
     public void setMimeType(String mimeType) {
         this.mimeType = mimeType;
+    }
+
+    public String getLongestWord() {
+        return longestWord;
+    }
+
+    public void setLongestWord(String longestWord) {
+        this.longestWord = longestWord;
     }
 }
